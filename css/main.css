@@ -91,7 +91,7 @@ under 640px
 }
 
 .header-content h1 {
-  padding-top: 3em;
+  padding-top: 5em;
 }
 
 .header-content ul {
@@ -104,7 +104,7 @@ under 640px
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   transform: rotate(45deg);
-  margin: -1em auto;
+  margin: 1em auto;
 }
 
 .down-arrow:hover {
@@ -117,9 +117,8 @@ under 640px
 */
 
 .portfolio {
-  border-top: 1px solid black;
   margin-top: 2em;
-  
+  display: none;
 }
 
 .portfolio-wrapper {
@@ -135,7 +134,38 @@ under 640px
   flex-basis: 80%;
 }
 
+.about,
+.contact {
+  display: none;
+}
 
+.up-arrow {
+  width: 15px;
+  height: 15px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  transform: rotate(45deg);
+  margin: 1em auto;
+}
+
+.up-arrow:hover {
+  cursor: pointer;
+}
+
+.about {
+  display: none;
+}
+
+.about p {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.about-image {
+  height: 15em;
+  width: 15em;
+  display: none;
+}
 
 
 
@@ -188,6 +218,29 @@ portfolio styling
     height:20em;
     flex-grow: 1;
     flex-basis: 40%;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .about p {
+    width: 40%;
+    float: left;
+    margin-left: 3em;
+  }
+
+  .about-image {
+    width: 40%;
+    display: block;
+    border: 1px solid black;
+    float: right;
+    margin-right: 2em;
+  }
+
+  .up-arrow,
+  .down-arrow {
+    clear: both;
   }
 }
 
